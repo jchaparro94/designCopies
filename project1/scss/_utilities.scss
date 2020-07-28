@@ -1,0 +1,45 @@
+// Variables
+$website-width: 1280px;
+$main-color: #333;
+$light-color: #f4f4f4;
+
+// Set Text Color
+@function set-text-color($color) {
+  @if(lightness($color) > 50) {
+    @return #000;
+  }
+
+  @else {
+    @return #fff;
+  }
+}
+
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Buttons
+%btn--shared {
+  display: inline-block;
+  padding: 0.8rem 5rem;
+  transition: all 0.5s;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.btn {
+  &-main {
+    @extend %btn--shared;
+    color: $main-color;
+    opacity: 0.6;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+}
