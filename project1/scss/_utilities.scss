@@ -1,6 +1,6 @@
 // Variables
 $website-width: 1280px;
-$main-color: #333;
+$main-color: #a1a3a6;
 $light-color: #f4f4f4;
 
 // Set Text Color
@@ -28,7 +28,7 @@ $light-color: #f4f4f4;
 // Buttons
 %btn--shared {
   display: inline-block;
-  padding: 0.8rem 5rem;
+  padding: 0.8rem 3rem;
   transition: all 0.5s;
   font-size: 1.3rem;
   cursor: pointer;
@@ -37,7 +37,7 @@ $light-color: #f4f4f4;
 .btn {
   &-main {
     @extend %btn--shared;
-    color: $main-color;
+    color: #fff;
     opacity: 0.6;
     border: 1px solid #fff;
     border-radius: 5px;
