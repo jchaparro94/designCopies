@@ -390,6 +390,96 @@ nav {
   }
 }
 
+//======================== SERVICES PAGE ========================
+
+// Package Section 
+#package-section {
+  padding: 2rem 0;
+
+  .packages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // grid-gap: 1rem;
+
+    .package {
+      width: 350px;
+      text-align: center;
+      border: 1px solid #E3E3E3;
+      border-radius: 5px;
+
+      .package-header {
+        background: #343A40;
+        color: #fff;
+        font-size: 1.8rem;
+        padding: 1rem;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+
+      .package-content {
+        padding: 0 2rem;
+
+        h3 {
+          font-size: 1.5rem;
+          padding: .8rem 0;
+        }
+
+        p {
+          font-size: 1rem;
+          padding-bottom: .8rem;
+        }
+
+        .features-list {
+          border: 1px solid #E3E3E3;
+          margin: auto;
+
+          .features-list-item {
+            padding: .7rem 2rem;
+            border-bottom: 1px solid #E3E3E3;
+
+            &:nth-child(5) {
+              border: none;
+            }
+          }
+        }
+
+        .btn {
+          display: block;
+          margin-top: 1rem;
+          background: #DD3545;
+          color: #fff;
+          padding: .5rem 0;
+          border-radius: 5px;
+        }
+      }
+
+      .package-footer {
+        background: #F8F8F8;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-top: 1px solid #E3E3E3;
+        color: #6C757C;
+      }
+    }
+  }
+}
+
+// FAQ Section 
+#faq {
+  .card {
+    border: #444;
+
+    .card-header,
+    .card-body {
+      background: #333;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
 
 
 
