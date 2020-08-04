@@ -399,7 +399,6 @@ nav {
   .packages {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    // grid-gap: 1rem;
 
     .package {
       width: 350px;
@@ -465,29 +464,63 @@ nav {
 }
 
 // FAQ Section 
-#faq {
-  .card {
-    border: #444;
+#faq {}
 
-    .card-header,
-    .card-body {
-      background: #333;
 
-      a {
-        color: #fff;
-        text-decoration: none;
+
+//======================== BLOG PAGE ========================
+// Blogs
+#blog {
+  padding: 2rem 0;
+
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+
+    .blog {
+      width: 350px;
+      height: 100%;
+      border: 1px solid #E3E3E3;
+      border-radius: 5px;
+      overflow: hidden;
+
+
+      .blog-image img {
+        height: 275px;
+        width: 350px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+
+      .blog-content {
+        padding: 1rem;
+
+        h3 {
+          font-size: 1.6rem;
+        }
+
+        .author {
+          font-size: 1rem;
+          color: #6C757C;
+          padding-bottom: 2rem;
+        }
+
+        cite {
+          font-size: .7rem;
+          color: #fff;
+        }
       }
     }
   }
+
 }
-
-
 
 
 
 // Footer 
 #main-footer {
-  height: 50px;
+  height: 75px;
   background: #000;
 
   .container {

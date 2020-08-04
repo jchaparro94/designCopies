@@ -2,6 +2,8 @@
 $website-width: 1280px;
 $main-color: #a1a3a6;
 $light-color: #f4f4f4;
+$red-color: #dc3545;
+$blue-color: #307bff;
 
 // Set Text Color
 @function set-text-color($color) {
@@ -23,6 +25,17 @@ $light-color: #f4f4f4;
 
 .text-center {
   text-align: center;
+}
+
+// Backgrounds
+.bg-red {
+  background: $red-color;
+  color: #fff;
+}
+
+.bg-blue {
+  background: $blue-color;
+  color: #fff;
 }
 
 // Buttons

@@ -8,6 +8,14 @@
 .text-center {
   text-align: center; }
 
+.bg-red {
+  background: #dc3545;
+  color: #fff; }
+
+.bg-blue {
+  background: #307bff;
+  color: #fff; }
+
 .btn-main, .btn-outline {
   display: inline-block;
   padding: 0.8rem 3rem;
@@ -326,18 +334,37 @@ nav {
         border-top: 1px solid #E3E3E3;
         color: #6C757C; }
 
-#faq .card {
-  border: #444; }
-  #faq .card .card-header,
-  #faq .card .card-body {
-    background: #333; }
-    #faq .card .card-header a,
-    #faq .card .card-body a {
-      color: #fff;
-      text-decoration: none; }
+#blog {
+  padding: 2rem 0; }
+  #blog .blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem; }
+    #blog .blogs .blog {
+      width: 350px;
+      height: 100%;
+      border: 1px solid #E3E3E3;
+      border-radius: 5px;
+      overflow: hidden; }
+      #blog .blogs .blog .blog-image img {
+        height: 275px;
+        width: 350px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px; }
+      #blog .blogs .blog .blog-content {
+        padding: 1rem; }
+        #blog .blogs .blog .blog-content h3 {
+          font-size: 1.6rem; }
+        #blog .blogs .blog .blog-content .author {
+          font-size: 1rem;
+          color: #6C757C;
+          padding-bottom: 2rem; }
+        #blog .blogs .blog .blog-content cite {
+          font-size: .7rem;
+          color: #fff; }
 
 #main-footer {
-  height: 50px;
+  height: 75px;
   background: #000; }
   #main-footer .container {
     display: flex;
