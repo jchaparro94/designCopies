@@ -516,6 +516,80 @@ nav {
 
 }
 
+//======================== CONTACT PAGE ========================
+#contact-section {
+  padding: 2rem 0;
+  height: 70vh;
+
+  .container {
+    height: 100%;
+
+    .contact {
+      margin-top: 1rem;
+      box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+
+      .contact-info {
+        background: #6C757C;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+
+        h3 {
+          padding-bottom: 1rem;
+        }
+      }
+
+      .contact-form {
+        padding: 1rem;
+
+        h3 {
+          text-align: center;
+          padding-bottom: 1rem;
+        }
+
+        form {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 20px;
+
+          button,
+          input,
+          textarea {
+            width: 100%;
+            padding: 1em;
+          }
+
+          button {
+            background: #323a40;
+            color: #fff;
+            border: 0;
+            text-transform: uppercase;
+
+            &:hover,
+            &:focus {
+              background: #6c757b;
+              outline: 0;
+              transition: background-color 2s ease-out;
+            }
+          }
+
+          .full {
+            grid-column: 1 / 3;
+          }
+
+          p {
+            margin: 0;
+
+            label {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 
 
 // Footer 
@@ -529,5 +603,145 @@ nav {
     justify-content: center;
     height: 100%;
     color: #fff;
+  }
+}
+
+// Large Screens
+@media(max-width: 700px) {
+
+  #showcase {
+
+    .showcase-content {
+
+      .showcase-title {
+        font-size: 2.5rem;
+      }
+
+      .showcase-text {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      .btn-lg {
+        padding: .5rem 2rem;
+      }
+    }
+  }
+
+  // A Section 
+  #a-section {
+    padding: 2rem 0;
+
+    .icons {
+      display: grid;
+      grid-template-columns: 1fr;
+      // grid-gap: 1rem;
+
+      i {
+        padding: 1rem 0;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  // B Section 
+  #b-section {
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  // C Section
+  #c-section {
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .section-one {
+        padding-top: 1rem;
+        align-items: center;
+      }
+    }
+  }
+
+  // D Section 
+  #d-section {
+
+    h3 {
+      font-size: 1.3rem;
+    }
+  }
+
+  // E Section
+  #e-section {
+
+    .gallery-items {
+
+      grid-template-columns: 1fr;
+      grid-gap: .5rem;
+    }
+  }
+
+  // F Section
+  #f-section {
+    height: 250px;
+    background: #343a40;
+    color: #fff;
+    text-align: center;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      h3 {
+        font-size: 2.3rem;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 100;
+        padding-bottom: 1rem;
+      }
+
+      input[type=text],
+      input[type=email] {
+        width: 150px;
+        height: 25px;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: none;
+        padding-left: 5px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .contact-info {
+
+      h3,
+      ul {
+        text-align: center;
+      }
+
+    }
   }
 }
