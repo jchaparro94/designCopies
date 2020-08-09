@@ -478,6 +478,53 @@ nav {
         #f-section .container input[type=text]:focus,
         #f-section .container input[type=email]:focus {
           outline: none; }
+  #home-header {
+    background: url("../img/image1.jpg") no-repeat center center/cover;
+    height: 200px;
+    color: #fff; }
+    #home-header .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%; }
+      #home-header .container .header-title {
+        font-size: 2.5rem; }
+  #about .container {
+    grid-template-columns: 1fr;
+    grid-gap: .5rem; }
+    #about .container .section1 {
+      align-items: center; }
+      #about .container .section1 h1 {
+        font-size: 2.1rem; }
+    #about .container .section2 {
+      justify-content: center; }
+      #about .container .section2 .about-img {
+        height: 450px;
+        width: 450px; }
+  #box-section .boxes {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem; }
+    #box-section .boxes .box {
+      padding: 20px 10px;
+      border-radius: 5px; }
+  #testimonials {
+    display: none; }
+  #package-section .packages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #package-section .packages .package {
+      margin: 1rem 0; }
+  #blog .blogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #blog .blogs .blog {
+      margin: 1rem 0; }
   .contact {
     display: grid;
     grid-template-columns: 1fr; }
